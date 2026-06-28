@@ -30,7 +30,7 @@ document.querySelectorAll("section").forEach((section) => {
 // Floating WhatsApp Button
 const whatsapp = document.createElement("a");
 
-whatsapp.href = "https://wa.me/919991019072";
+whatsapp.href = "https://wa.me/919830931672";
 whatsapp.target = "_blank";
 whatsapp.innerHTML = "💬";
 whatsapp.className = "floating-whatsapp";
