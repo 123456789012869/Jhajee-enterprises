@@ -1,0 +1,5 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://123456789012869.github.io/Jhajee-enterprises/sitemap.xml
