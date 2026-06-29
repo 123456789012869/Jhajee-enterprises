@@ -76,64 +76,105 @@ nav ul li a:hover{
 
 /* Hero */
 
+/* Premium Hero Section */
+
 .hero{
+    position:relative;
+    height:100vh;
+    background:url("../images/hero1.jpg") center center/cover no-repeat;
     display:flex;
-    justify-content:space-between;
+    justify-content:center;
     align-items:center;
-    padding:80px 10%;
-    background:#fff;
-    flex-wrap:wrap;
+    text-align:center;
+    overflow:hidden;
 }
 
-.hero-text{
-    flex:1;
+.hero-overlay{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.55);
 }
 
-.hero-text h1{
-    font-size:52px;
-    color:#111;
-    margin-bottom:15px;
+.hero-content{
+    position:relative;
+    z-index:2;
+    max-width:900px;
+    padding:20px;
 }
 
-.hero-text h2{
-    color:#d4af37;
+.hero-content h1{
+    color:#fff;
+    font-size:60px;
+    font-weight:700;
     margin-bottom:20px;
 }
 
-.hero-text p{
-    font-size:18px;
-    margin-bottom:30px;
+.hero-content h2{
+    color:#d4af37;
+    font-size:30px;
+    margin-bottom:20px;
 }
 
-.hero-buttons a{
-    display:inline-block;
-    margin-right:15px;
-    padding:14px 24px;
-    border-radius:30px;
+.hero-content p{
+    color:#fff;
+    font-size:20px;
+    line-height:1.8;
+    margin-bottom:35px;
+}
+
+.hero-buttons{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.btn-main{
+    background:#d4af37;
+    color:#111;
+    padding:15px 35px;
+    border-radius:50px;
     text-decoration:none;
     font-weight:600;
+    transition:.3s;
 }
 
-.call-btn{
-    background:#111;
+.btn-main:hover{
+    background:#fff;
+}
+
+.btn-secondary{
+    border:2px solid #fff;
     color:#fff;
+    padding:15px 35px;
+    border-radius:50px;
+    text-decoration:none;
+    transition:.3s;
 }
 
-.whatsapp-btn{
-    background:#25D366;
-    color:#fff;
+.btn-secondary:hover{
+    background:#fff;
+    color:#111;
 }
 
-.hero-image{
-    flex:1;
-    text-align:center;
+@media(max-width:768px){
+
+.hero{
+height:80vh;
 }
 
-.hero-image img{
-    width:90%;
-    max-width:450px;
-    border-radius:15px;
-    box-shadow:0 10px 30px rgba(0,0,0,.2);
+.hero-content h1{
+font-size:36px;
+}
+
+.hero-content h2{
+font-size:22px;
+}
+
+.hero-content p{
+font-size:16px;
+}
+
 }
 
 /* Sections */
