@@ -989,3 +989,40 @@ background:#d4af37;
 color:#111;
 
 }
+/* ==========================
+   Language Switcher
+========================== */
+
+.language-switcher{
+
+display:flex;
+
+gap:10px;
+
+}
+
+.language-switcher button{
+
+padding:8px 14px;
+
+border:none;
+
+border-radius:20px;
+
+cursor:pointer;
+
+background:#d4af37;
+
+color:#111;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.language-switcher button:hover{
+
+background:#fff;
+
+}
