@@ -489,3 +489,78 @@ background:#111;
 color:#fff;
 
 }
+/* ===========================================
+   PREMIUM GALLERY
+=========================================== */
+
+.gallery{
+
+background:#fff;
+
+}
+
+.gallery h2{
+
+margin-bottom:15px;
+
+}
+
+.gallery-subtitle{
+
+text-align:center;
+
+font-size:18px;
+
+color:#666;
+
+margin-bottom:50px;
+
+}
+
+.gallery-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+gap:25px;
+
+}
+
+.gallery-item{
+
+overflow:hidden;
+
+border-radius:20px;
+
+cursor:pointer;
+
+box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+transition:.4s;
+
+}
+
+.gallery-item:hover{
+
+transform:translateY(-10px);
+
+}
+
+.gallery-item img{
+
+width:100%;
+
+height:320px;
+
+object-fit:cover;
+
+transition:.5s;
+
+}
+
+.gallery-item:hover img{
+
+transform:scale(1.1);
+
+}
