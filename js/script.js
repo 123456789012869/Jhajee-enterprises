@@ -1,3 +1,29 @@
+// Scroll To Top Button
+
+const topBtn = document.getElementById("topBtn");
+
+// Hide button initially
+topBtn.style.display = "none";
+
+window.addEventListener("scroll", function () {
+
+    if (window.scrollY > 300) {
+        topBtn.style.display = "flex";
+    } else {
+        topBtn.style.display = "none";
+    }
+
+});
+
+// Scroll smoothly to top
+topBtn.addEventListener("click", function () {
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+
+});
 // Sticky Header Shadow
 window.addEventListener("scroll", function () {
     const header = document.querySelector("header");
