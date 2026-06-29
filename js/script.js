@@ -86,3 +86,56 @@ transition:.3s;
 .floating-whatsapp:hover{
 transform:scale(1.1);
 }
+// ===== Language Switcher =====
+
+const language = {
+
+en:{
+
+about:"About Jhajee Enterprises",
+
+products:"Our Premium Products",
+
+gallery:"Our Project Gallery",
+
+contact:"Contact Jhajee Enterprises"
+
+},
+
+hi:{
+
+about:"झाजी एंटरप्राइजेज के बारे में",
+
+products:"हमारे प्रीमियम उत्पाद",
+
+gallery:"हमारी प्रोजेक्ट गैलरी",
+
+contact:"झाजी एंटरप्राइजेज से संपर्क करें"
+
+}
+
+};
+
+document.getElementById("enBtn").onclick=function(){
+
+document.getElementById("aboutTitle").innerHTML=language.en.about;
+
+document.getElementById("productTitle").innerHTML=language.en.products;
+
+document.getElementById("galleryTitle").innerHTML=language.en.gallery;
+
+document.getElementById("contactTitle").innerHTML=language.en.contact;
+
+}
+
+document.getElementById("hiBtn").onclick=function(){
+
+document.getElementById("aboutTitle").innerHTML=language.hi.about;
+
+document.getElementById("productTitle").innerHTML=language.hi.products;
+
+document.getElementById("galleryTitle").innerHTML=language.hi.gallery;
+
+document.getElementById("contactTitle").innerHTML=language.hi.contact;
+
+}
